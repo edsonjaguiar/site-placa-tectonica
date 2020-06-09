@@ -1,0 +1,266 @@
+body{
+    background: #fff;
+    font-family: 'Raleway', sans-serif;
+}
+
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 17%;
+}
+
+.fab.fa-github, .fab.fa-twitter, .fab.fa-instagram{
+    text-decoration: none;
+    font-size: 23px;
+    letter-spacing: 20px;
+    color: #252525;
+}
+
+.navbar {
+    transition: all 0.4s;
+}
+
+#videos button{
+    margin-left: 11%;
+    margin-top: -39%;
+}
+
+#videos iframe{
+    height: 80%;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.navbar .nav-link {
+    font-size: 18px;
+    margin: 7px;
+    color: #fff;
+}
+
+.d-block{
+    width: 1100px;
+    height: 500px;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+    font-size: 2em;
+}
+
+p.text-justify{
+    margin-left: 45px;
+    color: #000;
+    margin-top: 2%;
+    font-size: 20px;
+}
+
+h3{
+    margin-left: 15%;
+    width: 76%;
+}
+
+.carousel-item h1{
+    color: #000;
+    font-weight: bold;
+}
+
+.carousel-item p{
+    text-align: justify;
+    font-weight: bold;
+    color: #000;
+    background: #fff;
+}
+
+/* Change navbar styling on scroll */
+.navbar.active {
+    background: #fff;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.active .nav-link {
+    color: #555;
+}
+
+.table-fixed tbody {
+    height: 300px;
+    overflow-y: auto;
+    width: 100%;
+}
+
+.a{
+    border-bottom: 3px solid #000;
+}
+
+.table-fixed thead,
+.table-fixed tbody,
+.table-fixed tr,
+.table-fixed td,
+.table-fixed th {
+    display: block;
+}
+
+.table-fixed tbody td,
+.table-fixed tbody th,
+.table-fixed thead > tr > th {
+    float: left;
+    position: relative;
+
+    &::after {
+        content: '';
+        clear: both;
+        display: block;
+    }
+}
+
+.navbar.active .nav-link:hover,
+.navbar.active .nav-link:focus {
+    color: #555;
+    text-decoration: none;
+}
+
+.navbar.active .navbar-brand {
+    color: #555;
+}
+
+@media(min-width: 62em){
+    .navbar{
+        height: 11.2%;
+    }
+    #videos iframe{
+        height: 60%;
+        margin-left: 11%;
+    }
+    #videos h3{
+        margin-left: 11%;
+    }
+    .d-block{
+        margin-left: 45px;
+        width: 87%;
+        height: 500px;
+    }
+    #galeria{
+        margin-left: 45px;
+    }
+    .carousel-control-next{
+        width: 30%;
+    }
+    .container h2{
+        margin-left: 5%;
+        margin-top: -10%;
+    }
+}
+
+/* Change navbar styling on small viewports */
+@media(max-width: 991.98px) {
+    .navbar {
+        background: #fff;
+    }
+
+    .navbar .navbar-brand, .navbar .nav-link {
+        color: #555;
+    }
+
+    .fa.fa-bars{
+        font-size: 30px;
+    }
+    .paral{
+        height: 694px;
+    }
+    p.text-justify{
+        width: 87%;
+        margin-left: 27px;
+        font-size: 20px;
+    }
+    .d-block{
+        width: 100%;
+        height: 270px;
+    }  
+    #videos iframe{
+        width: 101%;
+        margin-left: -1%;
+    }
+    #videos button{
+        margin-left: -1%;
+        margin-top: -8%;
+    }
+    #videos h3{
+        margin-left: 1%;
+        width: 100%;
+    }
+}
+
+.paral {
+    min-height: 664px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+    
+/* Paragrapgh for Parallax Section */ 
+.paral p {
+    font-size: 24px;
+    color:#f5f5f5;
+    font-weight: bold;
+    text-align: center;
+    line-height: 30px;
+}
+
+.arrow{
+    font-size: 34px;
+    color:#f5f5f5 !important;
+    text-align: center;
+    line-height: 260px;
+}
+    
+.fa-2x{
+    color: whitesmoke;
+}
+.fa-2x:hover{
+    color: whitesmoke;
+}
+
+.bounce {
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+}
+      
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100%{
+
+        transform: translateY(0);
+    }
+    40%{
+        transform: translateY(-32px);
+    }
+    60%{
+        transform: translateY(-15px);
+    }
+}
+
+    /* Heading for Parallax Section */ 
+    .paral h1 {
+        color: #f5f5f5;
+        font-weight: bold;
+        font-size: 60px;
+        text-align: center;
+        padding-top: 100px;
+        line-height: 100px;
+    }
+    
+    /* Image for Parallax Section */ 
+    .paralsec {
+        background-image: url("https://cdn.pixabay.com/photo/2015/04/06/10/43/mountain-709065_960_720.jpg");
+
+}
+    
+    .paralsec1 {
+        background-image: url("https://img.webnots.com/2017/05/parallax1.jpg");
+}
+    
